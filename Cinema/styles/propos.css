@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ------------ Propos -------------- */
+.propos {
+    height: 700px;
+    background-image: url("../images/PagePropos/cinema.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.propos section {
+    margin-bottom: 40px;
+}
+
+.propos h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.propos p {
+    font-size: 20px;
+    background-color: #333;
+    border-radius: 20px;
+    line-height: 1.6;
+    color: #ffffff;
+    text-align: center;
+    margin: 250px;
+}
+
+/* ------------ Qualité -------------- */
+.qualites {
+    padding: 50px 0; 
+    background-color: #ffffff; 
+}
+
+.qualite-container {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.qualite {
+    text-align: center; 
+    max-width: 300px; 
+}
+
+.qualite i {
+    color: #333; 
+}
+
+.qualite h2 {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+    color: #333; 
+}
+
+.qualite p {
+    font-size: 18px; 
+    line-height: 1.6; 
+    color: #666; 
+}
+
+/* ------------ Séances -------------- */
+.seances {
+    padding: 50px 0; 
+    background-color: #f9f9f9; 
+    text-align: center; 
+}
+
+.seance-container {
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+.seances h2 {
+    font-size: 36px; 
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+.seances p {
+    font-size: 18px; 
+    line-height: 1.6;
+    color: #666; 
+    margin-bottom: 20px; 
+}
+
+/*J'ai mit une transition ici pour que le survol du hover soit plus agréable*/
+.seances .btn {
+    font-size: 18px; 
+    padding: 10px 20px; 
+    background-color: #333;
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+.seances .btn:hover {
+    background-color: #555; 
+}
+
+/* ------------ Adresses -------------- */
+.adresses {
+    padding: 50px 0; 
+    background-color: #ffffff;
+    text-align: center; 
+}
+
+/* Style du conteneur d'adresse */
+.adresse-container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.adresse-container h2,
+.adresse-container p {
+    text-align: center; 
+}
+
+.adresse-container img {
+    max-width: 300px; 
+    margin-top: 20px;
+}
+
+/* ------------ Classiques -------------- */
+.classiques {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.classiques-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.classiques h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.classiques p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/*J'ai mit une transition ici pour que le survol du hover soit plus agréable*/
+/*Pareil que pour les séances*/
+.classiques .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.classiques .btn:hover {
+    background-color: #555;
+}
+
+
+/* Le style de toutes les classes se ressemble car je voulais garder une cohérence 
+pour la page. Mais j'en ai quand même fait des classes css pour chaque section si je veux 
+modifier les parties séparéments*/

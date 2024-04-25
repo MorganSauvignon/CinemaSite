@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif; /* Utiliser une police de caractères lisible */
+    margin: 0;
+}
+
+/*C'est ici le CSS où j'ai eu le plus de mal pour mettre en forme la page comme je le voulais*/
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*L'ID qui me permet de remplir ma div avec les films et ses séances*/
+#sessions-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Cette classe est donné à chaque film (Affiche, nom, et séances sont dedans)*/
+.movie-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 100%; 
+}
+
+/* C'est la classe que je mets sur le titre et l'affiche du film
+Encore une fois j'utilise une transition pour que ce soit plus agréable */
+.movie-header {
+    margin-right: 20px;
+    cursor: pointer; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-header:hover{
+    transform: scale(1.1); 
+
+}
+
+/*Classe dans movie-header, qui gère le nom du film*/
+.movie-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/*Classe dans movie-header, qui gère l'affiche*/
+.movie-poster {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/*Cette classe contient toutes les séances d'un film*/
+/* Le display flex me permet d'afficher les séances en lignes et dans leur div*/
+.sessions {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+/*Une séance*/
+.session {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.session span {
+    display: block;
+    margin: 5px 0;
+}

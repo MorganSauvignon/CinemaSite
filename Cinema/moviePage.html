@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Film</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/moviePage.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+    <header>
+        <!-- Barre de navigation -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Films</a></li> <!-- Lien vers la page d'accueil -->
+                <li><a href="seances.html">Séances</a></li> <!-- Lien vers la page des séances -->
+                <li><a href="propos.html">A Propos</a></li> <!-- Lien vers la page "A Propos" -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section principale pour les détails du film -->
+    <section class="movie">
+        <div id="movie-details">
+            <div class="movie-info">
+                <img id="movie-image" src="" alt="Affiche du film">
+                <h2 id="movie-title">Titre du film</h2>
+                <span id="movie-theme">Thème: </span>
+                <span id="movie-director">Directeur: </span>
+                <span id="movie-duration">Durée: </span>
+                <span id="movie-release-date">Date de sortie: </span>
+                <p id="movie-resume">Résumé: </p>
+                <span id="movie-nationality">Nationalité: </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script JavaScript pour charger les détails du film -->
+    <script src="./scripts/moviePage.js" type="module"></script>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>Copyright &#9400 - Le Cinéma de Malithi - 2024</p>
+    </footer>
+</body>
+
+</html>

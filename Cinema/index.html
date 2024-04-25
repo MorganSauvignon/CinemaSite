@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CinémaDeMalithi</title>
+    <!-- Mes liens CSS -->
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <!-- Ma navbar -->
+        <nav class="navbar">
+            <ul>
+                <li class="active"><a href="index.html">Films</a></li>
+                <li><a href="seances.html">Séances</a></li>
+                <li><a href="propos.html">A Propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Affiche en pleine écran -->
+    <section class="affiche">
+        <div class="BigOne"></div>
+    </section>
+
+    <!-- Films en salle -->
+    <section class="films">
+        <h1 class="center">Film en salle</h1>
+        <div class="films-affiche">
+            <ul id="films-list"></ul>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="./scripts/main.js" type="module"></script>
+    <script src="./scripts/navbar.js" type="module"></script>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>Copyright &#9400 - Le Cinéma de Malithi - 2024</p>
+    </footer>
+
+</body>
+
+</html>

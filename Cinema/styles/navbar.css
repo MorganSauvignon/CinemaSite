@@ -1,0 +1,43 @@
+
+/* ---------------------Bar de navigation---------------------*/
+.navbar{
+    background-color: black;
+    position: relative;
+    padding: 10px 0; 
+    z-index: 1000; 
+    transition: top 0.3s ease;
+}
+
+/* Style que je mets quand je veux cacher ma navbar*/
+.navbar.hidden {
+    display: none;
+}
+
+.navbar ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.navbar ul li {
+    display: inline; 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar ul li a {
+    color: rgb(190, 190, 190); 
+    text-decoration: none; 
+    padding: 10px 20px; 
+    transition: color 0.3s ease, background-color 0.3s ease; 
+}
+
+/* Le hover me permet d'avoir mes liens dans ma navbar qui change de couleur quand je passe la souris dessus*/
+.navbar ul li a:hover {
+    color: white; 
+}
+
+.navbar ul li.active a {
+    color: white;
+    font-weight: bold;
+}

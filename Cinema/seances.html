@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Liste des séances</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/navbar.css"> 
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/seance.css"> 
+</head>
+
+<body>
+
+    <header>
+        <!-- nav -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Films</a></li> 
+                <li class="active"><a href="seances.html">Séances</a></li>
+                <li><a href="propos.html">A Propos</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section des séances -->
+    <section class="seances">
+        <div class="container">
+            <!-- Titre avec la date du jour récupéré grace au script-->
+            <h1>Séances du jour - <span id="current-date"></span></h1> 
+            <div id="sessions-list"></div> 
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <!-- Script génèrer faire les div et ajouter les classes au séances -->
+    <script src="./scripts/seance.js" type="module"></script> 
+    <!-- Script pour avoir la date du jour -->
+    <script src="./scripts/getCurrentDate.js" type="module"></script> 
+    <script src="scripts/navbar.js" type="module"></script> 
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &#9400 - Le Cinéma de Malithi - 2024</p>
+    </footer>
+
+</body>
+
+</html>

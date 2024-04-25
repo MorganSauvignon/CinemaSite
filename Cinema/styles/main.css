@@ -1,0 +1,113 @@
+/* ------------ main.css -------------- */
+/* ------------ Css sur mes balises -------------- */
+body {
+    background-color: black; 
+    margin: 0;
+    font-family: Arial, sans-serif; /* Utiliser une police de caractères lisible */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;
+}
+
+/* ------------ Css sur mes classes -------------- */
+
+.center {
+    text-align: center;
+}
+
+/* Sur cette page je veux que ma navbar soit transparente donc je modifie son css par rapport à ce que j'ai dans navbar.css */
+.navbar {
+    background-color: transparent; 
+    position: fixed; 
+    padding: 10px 0; 
+    z-index: 1000; 
+    transition: top 0.3s ease; 
+}
+
+/*--------------------------- BIG ONE----------------------------*/ 
+/* CSS pour la div BigOne qui est ma grosse affiche en pleine écran sur mon site*/
+.BigOne {
+    max-width: 100%; 
+    max-height: 100vh;
+    overflow: hidden; 
+    position: relative;
+    z-index: 999; 
+
+}
+
+.BigOne img {
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: contain; 
+    display: block; 
+    margin: auto;
+    position: relative; 
+}
+
+/* Appliquer un dégradé transparent en haut et opaque en bas */
+/*Ici ca me permet d'avoir une séparation plus fluid entre ma grosse image et mes affiches de films en plus petit juste en dessous*/
+.BigOne::after {
+    content: ''; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 30%; 
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%); 
+}
+
+
+/* -------------------------- Affiche-------------------------- */
+.films-affiche {
+    display: flex;
+    justify-content: center;
+    cursor: pointer; 
+}
+
+.films-affiche ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* La transition ici me permet de rendre mon zoom sur l'image provoqué par le hover plus fluide*/ 
+.films-affiche ul li {
+    margin-right: 20px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.films-affiche ul li:hover {
+    transform: scale(1.1);
+}
+
+.films-affiche ul li:hover h3 {
+    color: white;
+}
+
+/* -------------------------- Poster -------------------------- */
+/*Je gère ici les classe css des poster*/
+.movie-poster {
+    text-align: center;
+}
+
+.movie-poster img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.movie-title {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #4d4c4c;
+}

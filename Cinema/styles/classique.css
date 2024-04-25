@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+}
+
+/*section "Classiques" */
+.classiques {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/*------------ PODIUM --------------*/
+.podium {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.podium-item {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.podium-item img {
+    width: 40%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.podium-item h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+/* ------------ Position -------------- */
+/*Je décale plus ou moins mes éléments pour simuler un podium*/
+.premierPosition {
+    margin-top: -30px;
+}
+
+.deuxiemePosition {
+    margin-top: -15px;
+}
+
+.troisiemePosition {
+    margin-top: 0;
+}
+
+.bottom-items {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-item {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.bottom-item img {
+    width: 20%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
